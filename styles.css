@@ -1,0 +1,27 @@
+.title-head {
+    background-color: rgb(227, 227, 227);
+    border: solid rgb(180, 180, 180) 1px;
+    margin-right: -13px;
+    margin-left: -13px;
+    padding-left: 13px;
+}
+
+.container {
+    background-color: none;
+    border: solid rgb(180, 180, 180) 1px;
+}
+
+.accept-radio {
+    background-color: rgb(114, 114, 114);
+    width: fit-content;
+    border: solid grey 1px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-check-input {
+    border: solid gray 1px;
+}
+

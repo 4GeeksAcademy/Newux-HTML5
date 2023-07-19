@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/367b915930.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-head">
+            <h3 class="heading py-3 m-0">Payment form example</h3>
+        </div>
+        <div class="card-fields">
+            <div class="alert alert-danger formGroupExampleInput mt-3" role="alert">
+                Some fields are missing
+            </div>
+            <form>
+                <div class="d-flex">
+                    <div class="mb-3 p-2 flex-fill">
+                        <label for="formGroupExampleInput" class="form-label">Card #</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput"
+                            placeholder="xxx xxxx xxxx xxxx">
+                    </div>
+                    <div class="mb-3 p-2 flex-fill">
+                        <label for="formGroupExampleInput" class="form-label">CVC #</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="000">
+                    </div>
+                    <div class="mb-3 p-2 flex-fill">
+                        <label for="formGroupExampleInput" class="form-label">Amount</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="third-div d-flex">
+                    <div class="d-flex flex-column mb-3 flex-fill">
+                        <div class="p-2">
+                            <label for="formGroupExampleInput" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+                        </div>
+                        <div class="p-2">
+                            <label for="formGroupExampleInput" class="form-label">City</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="City">
+                        </div>
+                        <div class="p-2">
+                            <label for="formGroupExampleInput" class="form-label">We accept:</label>
+                            <div class="accept-radio d-flex flex-row">
+                                <!-- <span class="p-2">$</span> -->
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-xl" style="color: #ffffff;"></i></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fa-xl" style="color: #ffffff;"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club fa-xl" style="color: #ffffff;"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex fa-xl" style="color: #ffffff;"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column mb-3 flex-fill">
+                        <div class="p-2">
+                            <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">
+                        </div>
+                        <div class="d-flex justify-content-xl-between">
+                            <div class="p-2 flex-grow-1">
+                                <label for="formGroupExampleInput" class="form-label">State</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Pick a state</option>
+                                    <option value="1">FL</option>
+                                    <option value="2">NY</option>
+                                    <option value="3">TX</option>
+                                </select>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <label for="formGroupExampleInput" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Postal Code">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div id="passwordHelpBlock" class="form-text">
+                                Add any notes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end p-2">
+                    <button class="btn btn-secondary me-md" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
